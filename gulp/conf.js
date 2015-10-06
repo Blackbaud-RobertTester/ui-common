@@ -6,8 +6,8 @@ var gutil = require('gulp-util');
 //TODO: Should not have to hard code the src here.  What we really want is the file to be created in the domain1 directory and then copied.
 exports.paths = {
     src: 'src/app/ui-common',
-    dist: 'dist',
-    tmp: '.tmp'
+    dist: 'src/app/ui-common/dist',
+    tmp: 'src/app/ui-common/.tmp'
 };
 
 exports.module = {

@@ -50,10 +50,6 @@ function webpackWrapper(watch, test, callback) {
         .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/app')));
 }
 
-gulp.task('scripts:common', function () {
+gulp.task('scripts:' + conf.module.key, function () {
     return webpackWrapper(true, false, function(){});
-});
-
-gulp.task('scripts-common-watch', function () {
-    return webpackWrapper(true, false);
 });
